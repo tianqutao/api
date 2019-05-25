@@ -97,6 +97,7 @@ app.use(express.json())
 //     }
 // })
 //路由地址
+app.use('/api/v1/auth',require('./routers/api/v1/users'))
 app.use('/api/v1/admin/people',require('./routers/api/v1/admin/people'))
 app.use('/api/v1/admin/product_type',require('./routers/api/v1/admin/product_type'))
 app.use('/api/v1/admin/products',require('./routers/api/v1/admin/products'))
